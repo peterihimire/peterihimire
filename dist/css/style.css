@@ -608,6 +608,10 @@ figcaption{
     border-radius: 50%;
     box-shadow: 0 .4rem .8rem 0 rgba(0.1, 0.1, 0.1, 0.5);
 }
+
+#image-bio{
+  margin: 6rem 0;
+}
  
 .img-bio{
     display: grid;
@@ -630,8 +634,9 @@ figcaption{
 }
 
 .box-1 p {
-  margin: 2rem 0 0 0;
+  margin: 2rem 0;
 }
+
 .box-1 a {
   text-decoration: none;
   color: blue;
@@ -644,6 +649,7 @@ figcaption{
     padding: 1.5rem;
     border-bottom: 5px solid var(--secondaryColor);
     margin: 0 0 2rem 0;
+    font-size: 1.5rem;
 }
 
 .box-2:hover{
@@ -922,15 +928,15 @@ textarea{
 }
 
 
-.alert{
+.error {
   display: flex;
   color:  #f44336;
   padding: 1rem;
-  background: rgb(255, 179, 179);
+  background: rgb(255, 204, 204);
   border-radius: .5rem;
   justify-content: space-between;
   margin: .5rem 0;
-  display: none;
+  /* display: none; */
 }
 
 .closebtn {
@@ -1375,21 +1381,21 @@ footer{
 
 @media screen and (max-height: 825px){
   .indicator {
-  z-index: 4;
-  color:var(--mainWhite);
-  /* border: .2rem solid var(--mainWhite); */
-  line-height: 4rem;
-  height: 3.5rem;
-  width: 3.5rem;
-  border-radius: 50%;
-  font-size: 2rem;
-  position: absolute;
-  top: 70rem;
-  animation: bounce 0.8s;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
+    z-index: 4;
+    color:var(--mainWhite);
+    /* border: .2rem solid var(--mainWhite); */
+    line-height: 4rem;
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    position: absolute;
+    top: 70rem;
+    animation: bounce 0.8s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
 
-}
+  }
 }
 
 
@@ -1426,6 +1432,8 @@ footer{
     height: 0;
     overflow: visible;
   }
+
+ 
 
 
   .navbar_links{
@@ -1545,8 +1553,9 @@ footer{
     background-color: var(--mainWhite);
   }
 
+
   .box-1 p {
-    margin: 0 0 0 0;
+    margin: 0 0 2rem 0 ;
   }
 }
 
