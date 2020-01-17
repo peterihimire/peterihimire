@@ -123,6 +123,7 @@ body {
 
 
 
+
 .navbar_links{
     list-style-type: none;
     transition: all 0.5s ease;
@@ -143,7 +144,7 @@ body {
   flex-direction: row;
   z-index: 5;
   margin-top: 0;
-  /* Unhiding the nav */
+  /* Unhiding the follow */
   height: 0;
   overflow: visible;
 }
@@ -388,32 +389,91 @@ transition: transform 150ms;
 .inner_box .fa-react {
   color: cyan;
 }
+.specialty_wrapper #react hr{
+  background: cyan;
+  padding: .2rem;
+  border: none;
+}
+
 .inner_box .fa-js {
   color: yellow;
 }
+.specialty_wrapper #javascript hr{
+  background: yellow;
+  padding: .2rem;
+  border: none;
+}
+
 .inner_box .fa-node-js {
   color: limegreen;
 }
+.specialty_wrapper #node hr{
+  background: limegreen;
+  padding: .2rem;
+  border: none;
+}
+
 .inner_box .fa-bold {
   color: purple;
 }
+.specialty_wrapper #bootstrap hr{
+  background: purple;
+  padding: .2rem;
+  border: none;
+}
+
 .inner_box .fa-gulp {
   color: #db4446;
 }
+.specialty_wrapper #gulp hr{
+  background: #db4446;
+  padding: .2rem;
+  border: none;
+}
+
 .inner_box .fa-git {
   color: var(--secondaryColor);
 }
+.specialty_wrapper #git hr{
+  background: var(--secondaryColor);
+  padding: .2rem;
+  border: none;
+}
+
 .inner_box .fa-sass {
   color: pink;
 }
+.specialty_wrapper #sass hr{
+  background: pink;
+  padding: .2rem;
+  border: none;
+}
+
 .inner_box .fa-html5 {
   color: orange;
 }
+.specialty_wrapper #html hr{
+  background: orange;
+  padding: .2rem;
+  border: none;
+}
+
 .inner_box .fa-css3-alt {
   color: blue;
 }
+.specialty_wrapper #css hr{
+  background: blue;
+  padding: .2rem;
+  border: none;
+}
+
 .inner_box .fa-linux {
   color: black;
+}
+.specialty_wrapper #linux hr{
+  background: black;
+  padding: .2rem;
+  border: none;
 }
 
 
@@ -751,7 +811,12 @@ figcaption{
 .contain h4 {
   margin: 1rem 0 .5rem 0;
 }
+.contain hr{
 
+  background: var(--primaryColor);
+  padding: .1rem;
+  border: none;
+}
 .projects > div{
     padding-bottom: 2rem;
 }
@@ -1124,14 +1189,14 @@ footer{
 
 @media screen and (min-width: 768px){
 
-  .navbar_header{
+  /* .navbar_header{
     background: var(--mainWhite);
     border-bottom: none;
     padding-top: 1rem ;
     position: fixed;
     width: 100%;
     z-index: 2;
-  }
+  } */
 
   .lg-heading{
     font-size: var(--mediumFont);
@@ -1155,6 +1220,7 @@ footer{
       width: 100%;
       z-index: 2;
       padding: 1.1rem 0 .8rem 0;
+      border-bottom: none;
     }
 
     .wrapper{
