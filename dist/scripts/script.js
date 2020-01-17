@@ -2,6 +2,7 @@ const navbarBtn = document.querySelector('.navbar_btn');
 const navbarLinks = document.querySelector('.navbar_links');
 
 
+const contactForm = document.querySelector('#contact-form')
 const nameInput = document.querySelector('#name');
 const emailInput = document.querySelector('#email');
 const messageInput = document.querySelector('#message');
@@ -31,26 +32,53 @@ AOS.init();
 
 
 // For The Contact Form Validation
-button.addEventListener('click', (e)=> {
-  e.preventDefault()
+
+
+const onSubmit = (event) => {
+  event.preventDefault()
   console.log('Button has been clicked.');
-  console.log(e.target)
+  console.log(event.target)
 
   if(nameInput.value === '' || emailInput.value === '' || messageInput.value === ''){
    
+    msgAlert.classList.add('error');
     msgAlert.innerHTML = `
     <p>Please enter all fields.</p>
     <span id="close" class="closebtn">&times</span>
     `;
-    msgAlert.classList.add('error');
-
-
-    setTimeout( ()=> {
-      msgAlert.remove();
-    }, 3000)
+   
+    setTimeout( () => msgAlert.remove(), 3000);
    
   } else {
     console.log('Success')
   }
-})
+
+}
+
+contactForm.addEventListener('submit', onSubmit);
+
+
+// contactForm.addEventListener('submit', (e)=> {
+//   e.preventDefault()
+//   console.log('Button has been clicked.');
+//   console.log(e.target)
+
+//   if(nameInput.value === '' || emailInput.value === '' || messageInput.value === ''){
+   
+//     msgAlert.classList.add('error');
+//     msgAlert.innerHTML = `
+//     <p>Please enter all fields.</p>
+//     <span id="close" class="closebtn">&times</span>
+//     `;
+   
+
+
+//     setTimeout( ()=> {
+//       msgAlert.remove();
+//     }, 3000)
+   
+//   } else {
+//     console.log('Success')
+//   }
+// })
 

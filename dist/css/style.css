@@ -188,7 +188,7 @@ body {
     background: none;
     padding: 1rem 2rem;
     font-size: 1.6rem;
-    font-weight: 540;
+    font-weight: 500;
     text-decoration: none;
     text-transform: capitalize;
     cursor: pointer;
@@ -629,7 +629,7 @@ figcaption{
 }
 
 .lg-heading{
-    font-size: var(--mediumFont);
+    font-size: 4rem;
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -649,7 +649,7 @@ figcaption{
 }
 
 .sm-heading{
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
 }
 
@@ -788,10 +788,10 @@ figcaption{
     overflow: hidden;
 }
 
-.img-overlay:hover{
+/* .img-overlay:hover{
     background-color: #fff;
     opacity: 0.7;
-}
+} */
 
 .img-overlay:hover .more-btn {
     transform: translatex(0);
@@ -812,8 +812,7 @@ figcaption{
   margin: 1rem 0 .5rem 0;
 }
 .contain hr{
-
-  background: var(--primaryColor);
+  background: var(--secondaryColor);
   padding: .1rem;
   border: none;
 }
@@ -997,7 +996,7 @@ textarea{
   display: flex;
   color:  #f44336;
   padding: 1rem;
-  background: rgb(255, 204, 204);
+  background: rgb(255, 226, 226);
   border-radius: .5rem;
   justify-content: space-between;
   margin: .5rem 0;
@@ -1219,7 +1218,7 @@ footer{
       position: fixed;
       width: 100%;
       z-index: 2;
-      padding: 1.1rem 0 .8rem 0;
+      padding: 2.1rem 0 1.8rem 0;
       border-bottom: none;
     }
 
