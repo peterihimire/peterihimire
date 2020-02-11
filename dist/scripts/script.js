@@ -1,5 +1,6 @@
 const navbarBtn = document.querySelector('.navbar_btn');
 const navbarLinks = document.querySelector('.navbar_links');
+const navbarOverlay = document.querySelector('.navbar-overlay');
 
 
 const contactForm = document.querySelector('#contact-form')
@@ -20,11 +21,30 @@ navbarBtn.addEventListener('click' , () => {
   if(value){
     navbarLinks.classList.remove('navbar_collapse');
     navbarBtn.classList.remove('change');
+    navbarOverlay.classList.remove('transparent-background');
+
+    window.addEventListener('click', function(e){
+      console.log(e.target)
+      console.log('clicked the window')
+    })
   }else{
     navbarLinks.classList.add('navbar_collapse');
     navbarBtn.classList.add('change');
+    navbarOverlay.classList.add('transparent-background');
   }
 })
+
+navbarOverlay.addEventListener('click', (e)=> {
+  console.log(e.target)
+  console.log('navbar overlay has been clicked');
+  let value = navbarLinks.classList.contains('navbar_collapse');
+  if (value){
+    navbarLinks.classList.remove('navbar_collapse');
+    navbarBtn.classList.remove('change');
+    navbarOverlay.classList.remove('transparent-background');
+  }
+})
+
 
 
 
