@@ -1,7 +1,9 @@
 const navbarBtn = document.querySelector('.navbar_btn');
 const navbarLinks = document.querySelector('.navbar_links');
 const navbarOverlay = document.querySelector('.navbar-overlay');
+const navbarHeader = document.querySelector('.navbar_header');
 
+// let window = document.querySelector(window);
 
 const contactForm = document.querySelector('#contact-form')
 const nameInput = document.querySelector('#name');
@@ -23,10 +25,10 @@ navbarBtn.addEventListener('click' , () => {
     navbarBtn.classList.remove('change');
     navbarOverlay.classList.remove('transparent-background');
 
-    window.addEventListener('click', function(e){
-      console.log(e.target)
-      console.log('clicked the window')
-    })
+    // window.addEventListener('click', function(e){
+    //   console.log(e.target)
+    //   console.log('clicked the window')
+    // })
   }else{
     navbarLinks.classList.add('navbar_collapse');
     navbarBtn.classList.add('change');
@@ -45,7 +47,50 @@ navbarOverlay.addEventListener('click', (e)=> {
   }
 })
 
+//sticky and navbar less padding
+// window.scroll(function(){
+//   let position = position.scrollTop();
+//   console.log(position)
+// })
 
+
+// document.querySelector(window).scroll(function(){
+//   console.log(window)
+// })
+
+
+// window.scrollTo(0,() => {
+//   let position = document.documentElement.scrollTop();
+//   console.log(position)
+// })
+
+
+// $(window).scroll(function(){
+//   let position = $(this).scrollTop();
+//   console.log(position)
+//   if(position >= 178){
+//     //code
+//   }
+// })
+
+// document.querySelector(window).addEventListener('scroll', () => {
+//   console.log(window)
+// })
+
+
+window.addEventListener('scroll', () => {
+  let position = scrollY;
+  console.log(position)
+  if(position >= 1 ){
+    navbarHeader.classList.add('navbar-height');
+    navbarHeader.classList.add('navbar-fixed')
+    console.log('navbar has passed the zero position')
+  } else {
+    navbarHeader.classList.remove('navbar-height')
+    navbarHeader.classList.remove('navbar-fixed')
+    console.log('navbar is at zero position')
+  }
+})
 
 
 // For AOS
