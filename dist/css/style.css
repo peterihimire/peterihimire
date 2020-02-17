@@ -15,10 +15,24 @@
     --smallFont: 3rem;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.padding-1 {
+  padding: 8rem 0;
+}
+
+.padding-2 {
+  padding: 6rem 0 8rem 0;
+}
+
+
+html{
+  scroll-behavior: smooth;
 }
 
 @keyframes bounce {
@@ -56,7 +70,7 @@ body {
 
 .grey_section {
     background-color: var(--mainGrey);
-    padding: 0 0 8rem 0;
+    /* padding: 0 0 8rem 0; */
 }
 
 
@@ -71,8 +85,12 @@ body {
     padding-top: 1rem ;
     position: sticky;
     width: 100%;
-    z-index: 2;
+    z-index: 3;
     /* height: 5rem; */
+}
+
+.navbar-fixed {
+  position: fixed;
 }
 
 .logo{
@@ -212,12 +230,16 @@ body {
   height: 100%;
   transition: all 0.3s ease;
   background: rgba(119, 118, 119, 0.692);
-  z-index: 2;
+  z-index: 3;
   visibility: hidden;
 }
 
 .transparent-background {
   visibility: visible;
+}
+
+.smoothScroll {
+  scroll-behavior: smooth;
 }
 
 /* ---------- End of Navbar ---------- */
@@ -236,6 +258,7 @@ header{
     text-align: center;
     padding: 0 3rem;
     position: relative;
+    z-index: 2;
 }
 
 .header-overlay {
@@ -317,6 +340,38 @@ header{
   font-size: 2rem;
 }
 
+
+
+.indicator2 {
+  /* z-index: 4; */
+  color:var(--secondaryColor);
+  /* border: .2rem solid var(--mainWhite); */
+  line-height: 4rem;
+  height: 3.5rem;
+  width: 3.5rem;
+  /* margin: 10rem 0  0 0; */
+  border-radius: 50%;
+  font-size: 2rem;
+  /* position: absolute; */
+  /* top: 70rem; */
+  padding: 10rem 0 0 0 ;
+  /* animation: bounce 0.8s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite; */
+
+}
+
+.indicator2 .fa-arrow-alt-circle-up{
+  font-size: 2rem;
+}
+
+.scrollToTop {
+  position: fixed;
+  bottom: 10rem;
+  right: 1rem;
+}
+
+
 .btn{
   padding: 1.5rem 3rem;
   border-radius: .2rem;
@@ -349,7 +404,7 @@ transition: transform 150ms;
 
 .specialty-section{
   background: var(--mainWhite);
-  padding: 0 0 4rem 0;
+  /* padding: 0 0 4rem 0; */
 }
 
 .specialty_wrapper {
@@ -633,7 +688,7 @@ figcaption{
 
 
 .features [class='fas fa-heartbeat'] {
-  color: rgb(255, 20, 90);
+  color: rgb(255, 51, 112);
 }
 
 
@@ -704,6 +759,7 @@ figcaption{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   grid-gap: 2rem;
+  padding: 0 0 8rem 0;
 }
 
 .stack-bio a {
@@ -764,7 +820,7 @@ figcaption{
 
 .portfolio_section{
     /* background: var(--mainWhite); */
-  padding: 0 0 6rem 0;
+  /* padding: 0 0 6rem 0; */
 }
 
 .portfolio_section h2 {
@@ -1242,7 +1298,7 @@ footer{
   header{
     background: url('../images/header-image.jpg')center/cover no-repeat;
     /* top: 75px; */
-    min-height: calc(100vh - 95px);
+    min-height: calc(100vh - 81px);
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -1255,7 +1311,7 @@ footer{
 
 .header-overlay {
   /* top: 75px; */
-    min-height: calc(100vh - 95px);
+    min-height: calc(100vh - 81px);
     width: 100vw;
     position: absolute;
    
@@ -1295,13 +1351,13 @@ footer{
   .sm-heading{
     font-size: var(--smallFont);
     text-align: center;
-}
+   }
     .navbar_header{
       background: var(--mainWhite);
       position: sticky;
       width: 100%;
-      z-index: 2;
-      padding: 3rem 0;
+      z-index: 4;
+      padding: 2.3rem 0;
       border-bottom: none;
     }
 
@@ -1310,7 +1366,8 @@ footer{
     }
 
     .navbar-height{
-      padding: 1.5rem 0;
+      padding: 1rem 0;
+      transition: var(--mainTransition);
     }
 
     .wrapper{
@@ -1343,13 +1400,13 @@ footer{
       overflow: visible;
     }
 
-    .follow-links li {
+  .follow-links li {
       margin: 0 .5rem;
       list-style: none;
       font-size: 2rem;
-    }
+  }
 
-    .follow-links  a i {
+  .follow-links  a i {
       color: var(--mainWhite);
       line-height: 2.5rem;
       height: 2.5rem;
@@ -1401,6 +1458,18 @@ footer{
       font-size: 2.5rem;
       color: var(--mainBlack);
       text-decoration: none;
+    }
+
+    .smoothScroll {
+      scroll-behavior: smooth;
+    }
+
+    .padding-1 {
+      padding: 4rem 0;
+    }
+    
+    .padding-2 {
+      padding: 6rem 0 8rem 0;
     }
     
     .projects{
@@ -1612,6 +1681,10 @@ footer{
     overflow: visible;
   }
     
+
+  .smoothScroll {
+    scroll-behavior: smooth;
+  }
 
 
   .lg-heading{

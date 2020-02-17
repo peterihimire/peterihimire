@@ -2,8 +2,10 @@ const navbarBtn = document.querySelector('.navbar_btn');
 const navbarLinks = document.querySelector('.navbar_links');
 const navbarOverlay = document.querySelector('.navbar-overlay');
 const navbarHeader = document.querySelector('.navbar_header');
+const backToTop = document.querySelector('#back-to-top')
+const pageSection = document.querySelector('section');
 
-// let window = document.querySelector(window);
+
 
 const contactForm = document.querySelector('#contact-form')
 const nameInput = document.querySelector('#name');
@@ -25,10 +27,7 @@ navbarBtn.addEventListener('click' , () => {
     navbarBtn.classList.remove('change');
     navbarOverlay.classList.remove('transparent-background');
 
-    // window.addEventListener('click', function(e){
-    //   console.log(e.target)
-    //   console.log('clicked the window')
-    // })
+
   }else{
     navbarLinks.classList.add('navbar_collapse');
     navbarBtn.classList.add('change');
@@ -48,49 +47,62 @@ navbarOverlay.addEventListener('click', (e)=> {
 })
 
 //sticky and navbar less padding
-// window.scroll(function(){
-//   let position = position.scrollTop();
-//   console.log(position)
-// })
-
-
-// document.querySelector(window).scroll(function(){
-//   console.log(window)
-// })
-
-
-// window.scrollTo(0,() => {
-//   let position = document.documentElement.scrollTop();
-//   console.log(position)
-// })
-
-
-// $(window).scroll(function(){
-//   let position = $(this).scrollTop();
-//   console.log(position)
-//   if(position >= 178){
-//     //code
-//   }
-// })
-
-// document.querySelector(window).addEventListener('scroll', () => {
-//   console.log(window)
-// })
-
-
 window.addEventListener('scroll', () => {
   let position = scrollY;
   console.log(position)
-  if(position >= 1 ){
+  if(position >= 50 ){
     navbarHeader.classList.add('navbar-height');
-    navbarHeader.classList.add('navbar-fixed')
-    console.log('navbar has passed the zero position')
+    navbarHeader.classList.add('navbar-fixed');
+    console.log('navbar has passed the zero position');
   } else {
-    navbarHeader.classList.remove('navbar-height')
-    navbarHeader.classList.remove('navbar-fixed')
-    console.log('navbar is at zero position')
+    navbarHeader.classList.remove('navbar-height');
+    navbarHeader.classList.remove('navbar-fixed');
+    console.log('navbar is at zero position');
   }
 })
+
+
+//backtotop scrolling
+window.addEventListener('scroll', () => {
+  let position2 = scrollY;
+  console.log(position2)
+  if(position2 >= 505 ){
+    backToTop.classList.add('scrollToTop');
+  } else {
+    backToTop.classList.remove('scrollToTop');
+  }
+})
+
+
+//modifying the section padding
+window.addEventListener('scroll', () => {
+  let position3 = scrollY;
+  if(position3 >= 50 ){
+    pageSection.classList.add('padding-1');
+    // pageSection.classList.remove('padding-2');
+  } else {
+  //   pageSection.classList.add('padding-2');
+    pageSection.classList.remove('padding-1');
+  }
+})
+
+
+
+// //modifying the section padding for mobile
+// window.addEventListener('scroll', () => {
+//   let position4 = scrollX;
+//   console.log(position4)
+//   if(position4 >= 50 ){
+//     pageSection.classList.add('padding-1');
+//   } else {
+//     pageSection.classList.remove('padding-1');
+//   }
+// })
+
+
+
+
+
 
 
 // For AOS
