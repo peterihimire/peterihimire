@@ -888,11 +888,11 @@ figcaption{
 }
 
 .text-contain {
-  padding: 1rem;
+  padding: 0 1rem 1rem 1rem;
 }
 
 .contain h3 {
-  margin: 1rem 0 .3rem 0;
+  /* margin: 1rem 0 .3rem 0; */
   text-transform: uppercase;
 }
 .contain h4 {
@@ -983,7 +983,7 @@ figcaption{
 .btn-flex{
     display: flex;
     justify-content: center;
-    border-top: .2rem solid var(--secondaryColor);
+    border-top: .1rem solid var(--mainGrey);
     padding: 1rem 0;
 }
 /* ---------- End of Projects ---------- */
