@@ -233,7 +233,7 @@ body {
   width: 100%;
   height: 100%;
   transition: all 0.3s ease;
-  background: rgba(119, 118, 119, 0.692);
+  background: rgba(61, 61, 61, 0.692);
   z-index: 3;
   visibility: hidden;
 }
