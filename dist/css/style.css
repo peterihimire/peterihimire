@@ -21,14 +21,18 @@
   box-sizing: border-box;
 }
 
-
-.padding-1 {
-  padding: 8rem 0;
+section {
+  padding: 10rem 0;
 }
 
+
+/* .padding-1 {
+  padding: 12rem 0;
+} */
+/* 
 .padding-2 {
   padding: 6rem 0 8rem 0;
-}
+} */
 
 
 html{
@@ -640,9 +644,9 @@ figcaption{
     color: var(--mainBlack);
 }
 
-.features{
-  padding: 6rem  0 8rem 0;
-}
+/* .features{
+  padding: 6rem 0;
+} */
 
 
 .features .cores h4 {
@@ -730,7 +734,7 @@ figcaption{
   text-align: center;
 }
 
-.sub-header{
+.add-header-pad{
   padding-top: 10rem;
 }
 
@@ -759,7 +763,7 @@ figcaption{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   grid-gap: 2rem;
-  padding: 0 0 8rem 0;
+  /* padding: 0 0 8rem 0; */
 }
 
 .stack-bio a {
@@ -1464,9 +1468,9 @@ footer{
       scroll-behavior: smooth;
     }
 
-    .padding-1 {
-      padding: 4rem 0;
-    }
+    /* .padding-1 {
+      padding: 12rem 0;
+    } */
     
     .padding-2 {
       padding: 6rem 0 8rem 0;

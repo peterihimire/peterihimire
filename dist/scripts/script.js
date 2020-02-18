@@ -3,7 +3,7 @@ const navbarLinks = document.querySelector('.navbar_links');
 const navbarOverlay = document.querySelector('.navbar-overlay');
 const navbarHeader = document.querySelector('.navbar_header');
 const backToTop = document.querySelector('#back-to-top')
-const pageSection = document.querySelector('section');
+// const pageSection = document.querySelector('section');
 
 
 
@@ -66,7 +66,7 @@ window.addEventListener('scroll', () => {
 window.addEventListener('scroll', () => {
   let position2 = scrollY;
   console.log(position2)
-  if(position2 >= 505 ){
+  if(position2 >= 650 ){
     backToTop.classList.add('scrollToTop');
   } else {
     backToTop.classList.remove('scrollToTop');
@@ -74,17 +74,40 @@ window.addEventListener('scroll', () => {
 })
 
 
+
+
+
+// let numOfSection = document.querySelectorAll('section').length;
+// let numOfSubHeader = document.querySelectorAll('.sub-header').length;
+// console.log(numOfSubHeader)
+// // console.log(numOfSection)
+// for(let i = 0; i < numOfSubHeader; i++){
+//   let addPadding = document.querySelectorAll('.sub-header')[i]
+//   console.log(i, addPadding)
+//   window.addEventListener('scroll', () => {
+//     let position4 = scrollX;
+//     console.log(position4)
+//     if(position4 <= 0 ){
+//       addPadding.classList.add('add-header-pad');
+//       setTimeout( () =>addPadding.classList.remove('add-header-pad'), 10000);
+//     } else {
+      
+//     }
+//   })
+// }
+
+
 //modifying the section padding
-window.addEventListener('scroll', () => {
-  let position3 = scrollY;
-  if(position3 >= 50 ){
-    pageSection.classList.add('padding-1');
-    // pageSection.classList.remove('padding-2');
-  } else {
-  //   pageSection.classList.add('padding-2');
-    pageSection.classList.remove('padding-1');
-  }
-})
+// window.addEventListener('scroll', () => {
+//   let position3 = scrollY;
+//   if(position3 <= 49 ){
+//     pageSection.classList.add('padding-1');
+//     // pageSection.classList.remove('padding-2');
+//   } else {
+//   //   pageSection.classList.add('padding-2');
+//     // pageSection.classList.remove('padding-1');
+//   }
+// })
 
 
 
