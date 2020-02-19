@@ -883,11 +883,16 @@ figcaption{
 }
 
 .contain{
-    padding: 2px 16px;
+    /* padding: 2px 16px; */
+    /* margin: 0 1rem; */
+}
+
+.text-contain {
+  padding: 0 1rem 1rem 1rem;
 }
 
 .contain h3 {
-  margin: 1rem 0 .3rem 0;
+  /* margin: 1rem 0 .3rem 0; */
   text-transform: uppercase;
 }
 .contain h4 {
@@ -902,7 +907,7 @@ figcaption{
 }
 
 .projects > div{
-    padding-bottom: 2rem;
+    /* padding-bottom: 2rem; */
 }
 
 .techno{
@@ -927,9 +932,9 @@ figcaption{
 }
 
 
-hr{
+/* hr{
     margin: 15px;
-}
+} */
 
 
 .portfolio-btn{
@@ -978,6 +983,8 @@ hr{
 .btn-flex{
     display: flex;
     justify-content: center;
+    border-top: .1rem solid var(--mainGrey);
+    padding: 1rem 0;
 }
 /* ---------- End of Projects ---------- */
 
