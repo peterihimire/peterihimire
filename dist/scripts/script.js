@@ -77,31 +77,95 @@ window.addEventListener('scroll', () => {
 
 
 
+// let numOfSection = document.querySelectorAll('section').length;
+// let numOfSubHeader = document.querySelectorAll('.sub-header').length;
+// console.log(numOfSubHeader)
+// // console.log(numOfSection)
+// for(let i = 0; i < numOfSubHeader; i++){
+//   let addPadding = document.querySelectorAll('.sub-header')[i]
+//   console.log(i, addPadding)
+//   window.addEventListener('scroll', () => {
+//     let position4 = scrollX;
+//     console.log(position4)
+//     if(position4 <= 0 ){
+//       addPadding.classList.add('add-header-pad');
+//       setTimeout( () =>addPadding.classList.remove('add-header-pad'), 10000);
+//     } else {
+      
+//     }
+//   })
+// }
+
+
+//modifying the section padding
+// window.addEventListener('scroll', () => {
+//   let position3 = scrollY;
+//   if(position3 <= 49 ){
+//     pageSection.classList.add('padding-1');
+//     // pageSection.classList.remove('padding-2');
+//   } else {
+//   //   pageSection.classList.add('padding-2');
+//     // pageSection.classList.remove('padding-1');
+//   }
+// })
+
+
+
+// //modifying the section padding for mobile
+// window.addEventListener('scroll', () => {
+//   let position4 = scrollX;
+//   console.log(position4)
+//   if(position4 >= 50 ){
+//     pageSection.classList.add('padding-1');
+//   } else {
+//     pageSection.classList.remove('padding-1');
+//   }
+// })
+
+
+
+
+
+
+
 // For AOS
 AOS.init();
 
 
 
-// For The Contact Form Validation
-const onSubmit = (event) => {
-  event.preventDefault()
-  console.log('Button has been clicked.');
-  console.log(event.target)
+// // For The Contact Form Validation
+// const onSubmit = (event) => {
+//   event.preventDefault()
+//   console.log('Button has been clicked.');
+//   console.log(event.target)
 
-  if(nameInput.value === '' || emailInput.value === '' || messageInput.value === ''){
+//   if(nameInput.value === '' || emailInput.value === '' || messageInput.value === ''){
    
-    msgAlert.classList.add('error');
-    msgAlert.innerHTML = `
-      <p>Please enter all fields.</p>
-      <span id="close" class="closebtn">&times</span>
-    `;
+//     msgAlert.classList.add('error');
+//     msgAlert.innerHTML = `
+//       <p>Please enter all fields.</p>
+//       <span id="close" class="closebtn">&times</span>
+//     `;
    
-    setTimeout( () => msgAlert.remove(), 3000);
+//     setTimeout( () => msgAlert.remove(), 3000);
    
-  } 
-}
+//   } else {
+//     console.log('Success')
+//     // msgAlert.classList.add('success');
+//     // msgAlert.innerHTML = `
+//     //   <p>Thank you! Your form submission has been received.</p>
+//     //   <span id="close" class="closebtn">&times</span>
+//     // `;
+   
+//     setTimeout( () => msgAlert.remove(), 3000);
+//     nameInput.value = '';
+//     emailInput.value = '';
+//     messageInput.value = '';
+//   }
 
-contactForm.addEventListener('submit', onSubmit);
+// }
+
+// contactForm.addEventListener('submit', onSubmit);
 
 
 
