@@ -1581,89 +1581,11 @@ footer{
     width: 100%;
     margin: .8rem 0;
     border-radius: .2rem;
-}
-
-}
-
-/* @media screen and (max-height: 1366px){
-  .indicator {
-  z-index: 4;
-  color:var(--mainWhite);
-
-  line-height: 4rem;
-  height: 3.5rem;
-  width: 3.5rem;
-  border-radius: 50%;
-  font-size: 2rem;
-  position: absolute;
-  top: 120rem;
-  animation: bounce 0.8s;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-
-}
-}
-
-@media screen and (max-height: 1024px){
-  .indicator {
-    z-index: 4;
-    color:var(--mainWhite);
-
-    line-height: 4rem;
-    height: 3.5rem;
-    width: 3.5rem;
-    border-radius: 50%;
-    font-size: 2rem;
-    position: absolute;
-    top: 80rem;
-    animation: bounce 0.8s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-  
   }
+
 }
 
 
-@media screen and (max-height: 825px){
-  .indicator {
-    z-index: 4;
-    color:var(--mainWhite);
-
-    line-height: 4rem;
-    height: 3.5rem;
-    width: 3.5rem;
-    border-radius: 50%;
-    font-size: 2rem;
-    position: absolute;
-    top: 70rem;
-    animation: bounce 0.8s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-
-  }
-}
-
-
-
-@media screen and (max-height: 740px){
-    .indicator {
-    z-index: 4;
-    color:var(--mainWhite);
-
-    line-height: 4rem;
-    height: 3.5rem;
-    width: 3.5rem;
-    border-radius: 50%;
-    font-size: 2rem;
-    position: absolute;
-    top: 55rem;
-    animation: bounce 0.8s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-  
-  }
-}
- */
 
 @media screen and (min-width: 1366px ){
 
